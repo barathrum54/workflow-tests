@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.0.0 (2023-05-15)
+
+
+### Bug Fixes
+
+* **global:** testing ([60b2187](https://github.com/barathrum54/workflow-tests/commit/60b21878b29b722443be2d19305e8c3055f5af93))
+
 ## [0.63.7](https://github.com/LUI-UI/lui-vue/compare/v0.63.6...v0.63.7) (2023-05-11)
 
 ### Bug Fixes
