@@ -7,6 +7,10 @@ on:
         description: 'Version to bump'
         required: true
         default: 'patch'
+  branch:
+    description: 'Branch to run on'
+    required: true
+    default: 'master'
   pull_request:
     types:
       - closed
@@ -21,6 +25,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
+        with:
+          ref: ${{ github.event.pull_request.base.ref }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
@@ -41,6 +47,8 @@ jobs:
         with:
           release-type: node
           package-name: lui-ui/lui-vue
+          bump-minor-pre-major: ${{ github.event.inputs.version }}
+          default-branch: your-branch-name
 
   release:
     runs-on: ubuntu-latest
