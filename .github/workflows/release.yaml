@@ -48,7 +48,7 @@ jobs:
           release-type: node
           package-name: lui-ui/lui-vue
           bump-minor-pre-major: ${{ github.event.inputs.version }}
-          default-branch: your-branch-name
+          default-branch: ${{ github.event.inputs.branch }}
 
   release:
     runs-on: ubuntu-latest
