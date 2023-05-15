@@ -7,10 +7,10 @@ on:
         description: 'Version to bump'
         required: true
         default: 'patch'
-  branch:
-    description: 'Branch to run on'
-    required: true
-    default: 'master'
+      branch:
+        description: 'Branch to run on'
+        required: true
+        default: 'master'
   pull_request:
     types:
       - closed
